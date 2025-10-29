@@ -4,7 +4,8 @@ import asyncio
 import os
 import logging
 from logging.handlers import RotatingFileHandler
-
+from dotenv import load_dotenv
+load_dotenv()
 
 #Bot token @Botfather, --⚠️ REQUIRED--
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
